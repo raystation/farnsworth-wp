@@ -1,10 +1,22 @@
 @import "app";
 
+@mixin space-reset {
+	padding: 0;
+	margin: 0;
+}
+
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 .scale-with-grid { width: 100%; height: auto; }
 
 body {
 	background-color: whitesmoke;
-	padding-top: 10px;
 }
 
 hr { 
@@ -14,11 +26,41 @@ hr {
 	margin : 1em 0;
 }
 
+header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 nav {
 	padding-top: 2.5rem;
+	text-align: right;
 	ul {
 		li {
 			display: inline-block;
+			margin-right: 1em;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.description {
+	padding: 1rem 0;
+}
+
+#sidebar {
+	background-color: silver;
+	padding:1em;
+	h2 {
+		font-size: 1rem;
+	}
+	ul {
+		@include space-reset;
+		margin-bottom: 1rem;
+		li {
+			@include space-reset;
+			list-style: none;
 		}
 	}
 }
@@ -31,7 +73,7 @@ footer {
 		margin: 0;
 		border-spacing:0;
 		td {
-			background-color: white;
+			background-color: rgba(white,0);
 			padding: 0;
 			margin: 0;
 			padding-right: 1em;
