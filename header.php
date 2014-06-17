@@ -8,8 +8,27 @@
     <script src="<?php echo get_bloginfo('template_url') ?>/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+
+    <header class="row">
+      <div class="small-8 columns">
+        <img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo.jpg" alt="">
       </div>
-    </div>
+      <nav class="small-4 columns">
+        
+        <?php //main menu 
+          wp_nav_menu(
+            array(
+              "main-menu" => "Main Menu",
+              "container" => "ul"
+            )
+          );
+        ?>
+
+<!--         <ul>
+          <li><a href="#">1stdibs</a></li>
+          <li><a href="inventory">Inventory</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="journal">Journal</a></li>
+        </ul> -->
+      </nav>
+    </header> 

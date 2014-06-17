@@ -7983,3 +7983,50 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 3, ../scss/style.scss */
+.scale-with-grid {
+  width: 100%;
+  height: auto;
+}
+
+/* line 5, ../scss/style.scss */
+body {
+  background-color: whitesmoke;
+  padding-top: 10px;
+}
+
+/* line 10, ../scss/style.scss */
+hr {
+  border: 0;
+  height: 15px;
+  background: url("../img/bg/dots.gif") repeat-x;
+  margin: 1em 0;
+}
+
+/* line 17, ../scss/style.scss */
+nav {
+  padding-top: 2.5rem;
+}
+/* line 20, ../scss/style.scss */
+nav ul li {
+  display: inline-block;
+}
+
+/* line 26, ../scss/style.scss */
+footer {
+  padding-bottom: 100px;
+}
+/* line 28, ../scss/style.scss */
+footer table {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+}
+/* line 33, ../scss/style.scss */
+footer table td {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  padding-right: 1em;
+}
