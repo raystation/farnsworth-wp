@@ -1,8 +1,9 @@
-<?php get_header() ;?>
-  
+<?php 
+//single post page
+get_header() ;?>
+<div class="development">single.php</div>
 <section class="row posts">
   <div class="small-12 medium-8 columns">
-      <div class="development">index.php</div>
       <?php 
 
         if (have_posts()) :
@@ -16,7 +17,7 @@
         endif;
 
       ;?> 
-
+      <small><?php the_time('F jS, Y') ?> by <?php the_author() ?></small>
   </div>
   <div class="medium-4 columns small-12 sidebar">
     <?php get_sidebar() ;?>
@@ -25,4 +26,3 @@
 </section>
 
 <?php get_footer() ;?>
-

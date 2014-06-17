@@ -1,3 +1,258 @@
+/* Slider */
+/* line 16, ../scss/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 31, ../scss/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 38, ../scss/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 42, ../scss/_slick.scss */
+.slick-loading .slick-list {
+  background: white url(slick/ajax-loader.gif) center center no-repeat;
+}
+/* line 46, ../scss/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 54, ../scss/_slick.scss */
+.slick-slider .slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide img {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 61, ../scss/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1;
+}
+/* line 69, ../scss/_slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 74, ../scss/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 78, ../scss/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 82, ../scss/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 86, ../scss/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 88, ../scss/_slick.scss */
+.slick-slide img.slick-loading {
+  background: white url(slick/ajax-loader.gif) center center no-repeat;
+  padding-bottom: 100%;
+}
+/* line 96, ../scss/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 100, ../scss/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 104, ../scss/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 108, ../scss/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+/* line 129, ../scss/_slick.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  margin-top: -10px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+/* line 144, ../scss/_slick.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+/* line 148, ../scss/_slick.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+/* line 152, ../scss/_slick.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+/* line 156, ../scss/_slick.scss */
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: red;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 165, ../scss/_slick.scss */
+.slick-prev {
+  left: -25px;
+}
+/* line 167, ../scss/_slick.scss */
+.slick-prev:before {
+  content: "\2190";
+}
+
+/* line 171, ../scss/_slick.scss */
+.slick-next {
+  right: -25px;
+}
+/* line 173, ../scss/_slick.scss */
+.slick-next:before {
+  content: "\2192";
+}
+
+/* Dots */
+/* line 180, ../scss/_slick.scss */
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 183, ../scss/_slick.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+/* line 192, ../scss/_slick.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 201, ../scss/_slick.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+/* line 213, ../scss/_slick.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+/* line 215, ../scss/_slick.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+/* line 220, ../scss/_slick.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\2022";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 239, ../scss/_slick.scss */
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+}
+
 /* line 324, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.2.3/";
@@ -7983,18 +8238,61 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 16, ../scss/style.scss */
+@media only screen and (min-width: 960px) {
+  /* line 15, ../scss/style.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 15, ../scss/style.scss */
+  .desktop {
+    display: inherit;
+  }
+}
+@media only screen and (max-width: 959px) {
+  /* line 16, ../scss/style.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 16, ../scss/style.scss */
+  .desktop {
+    display: inherit;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 17, ../scss/style.scss */
+  .mobile {
+    display: inherit;
+  }
+
+  /* line 17, ../scss/style.scss */
+  .desktop {
+    display: none;
+  }
+}
+/* line 34, ../scss/style.scss */
 .scale-with-grid {
   width: 100%;
   height: auto;
 }
 
-/* line 18, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
+.add-bottom {
+  margin-bottom: 1.875rem;
+}
+
+/* line 39, ../scss/style.scss */
 body {
   background-color: whitesmoke;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
+.posts hr:first-child {
+  margin-top: 0;
+}
+
+/* line 47, ../scss/style.scss */
 hr {
   border: 0;
   height: 15px;
@@ -8002,69 +8300,83 @@ hr {
   margin: 1em 0;
 }
 
-/* line 29, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 nav {
   padding-top: 2.5rem;
   text-align: right;
 }
-/* line 38, ../scss/style.scss */
+@media only screen and (max-width: 767px) {
+  /* line 59, ../scss/style.scss */
+  nav {
+    text-align: center;
+  }
+}
+/* line 66, ../scss/style.scss */
 nav ul li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 41, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 48, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .description {
   padding: 1rem 0;
 }
 
-/* line 52, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 #sidebar {
   background-color: silver;
   padding: 1em;
 }
-/* line 55, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 #sidebar h2 {
   font-size: 1rem;
 }
-/* line 58, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 #sidebar ul {
   padding: 0;
   margin: 0;
   margin-bottom: 1rem;
 }
-/* line 61, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 #sidebar ul li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 96, ../scss/style.scss */
 footer {
   padding-bottom: 100px;
 }
-/* line 70, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 footer table {
   border: 0;
   padding: 0;
   margin: 0;
   border-spacing: 0;
 }
-/* line 75, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 footer table td {
   background-color: rgba(255, 255, 255, 0);
   padding: 0;
   margin: 0;
   padding-right: 1em;
+}
+
+/* line 112, ../scss/style.scss */
+.development {
+  position: fixed;
+  top: 5px;
+  z-index: 9999;
+  color: red;
 }

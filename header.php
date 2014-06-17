@@ -23,7 +23,8 @@
           wp_nav_menu(
             array(
               "main-menu" => "Main Menu",
-              "container" => "ul"
+              "container" => "ul",
+              "menu_class" => "dropdown"
             )
           );
         ?>

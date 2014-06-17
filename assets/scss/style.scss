@@ -1,5 +1,22 @@
+@import "slick";
 @import "app";
 
+// SETTINGS
+$bgcolor: whitesmoke;
+
+// MEDIA QUERIES
+$desktop-large: "only screen and (min-width: 960px)";
+$desktop: "only screen and (max-width: 959px)";
+$tablet-portrait: "only screen and (min-width: 768px) and (max-width: 959px)";
+$mobile: "only screen and (max-width: 767px)";
+$mobile-landscape: "only screen and (min-width: 480px) and (max-width: 767px)";
+$mobile-portrait: "only screen and (max-width: 479px)";
+
+@media #{$desktop-large} { .mobile { display:none; } .desktop{display:inherit;}  }
+@media #{$desktop} { .mobile { display:none; } .desktop{display:inherit;}  }
+@media #{$mobile} { .mobile { display:inherit; } .desktop{display:none;} }
+
+// MIXINS
 @mixin space-reset {
 	padding: 0;
 	margin: 0;
@@ -13,10 +30,18 @@
 	transform: translateY(-50%);
 }
 
+// OPTIONS
 .scale-with-grid { width: 100%; height: auto; }
+.add-bottom { margin-bottom: $column-gutter; }
 
+
+// GENERAL
 body {
-	background-color: whitesmoke;
+	background-color: $bgcolor;
+}
+
+.posts hr:first-child {
+	margin-top: 0;
 }
 
 hr { 
@@ -34,6 +59,9 @@ header {
 nav {
 	padding-top: 2.5rem;
 	text-align: right;
+	@media #{$mobile} {
+		text-align: center;
+	}
 	ul {
 		li {
 			display: inline-block;
@@ -80,3 +108,12 @@ footer {
 		}
 	}
 }
+
+.development {
+	position: fixed;
+	top: 5px;
+	z-index: 9999;
+	// margin-left:-50%;
+	// margin-right:-50%;
+	color: red;
+} 
