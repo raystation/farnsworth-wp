@@ -8,7 +8,7 @@
     <script src="<?php echo get_bloginfo('template_url') ?>/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-
+    <div class="responsive-indicator"></div>
     <header class="row">
 
       <div class="small-12 medium-6 columns">
@@ -19,7 +19,7 @@
 
         <?php 
 
-          //main menu 
+          //MAIN MENU
           wp_nav_menu(
             array(
               "main-menu" => "Main Menu",

@@ -1,7 +1,10 @@
 @import "slick";
+@import "responsive-indicator";
 @import "app";
 
 // SETTINGS
+$font: "Times New Roman", Times, serif;
+$font-size: 13pt;
 $bgcolor: whitesmoke;
 
 // MEDIA QUERIES
@@ -38,6 +41,11 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 // GENERAL
 body {
 	background-color: $bgcolor;
+	font-family: $font;
+	font-size: $font-size;
+	p {
+		font-size: $font-size;
+	}
 }
 
 .posts hr:first-child {
@@ -50,6 +58,8 @@ hr {
 	background: url('../img/bg/dots.gif') repeat-x;
 	margin : 1em 0;
 }
+
+//HEADER
 
 header {
 	padding-top: 10px;
@@ -78,6 +88,7 @@ nav {
 }
 
 #sidebar {
+	font-family: sans-serif;
 	background-color: silver;
 	padding:1em;
 	h2 {
@@ -86,12 +97,15 @@ nav {
 	ul {
 		@include space-reset;
 		margin-bottom: 1rem;
+		
 		li {
 			@include space-reset;
 			list-style: none;
 		}
 	}
 }
+
+//FOOTER
 
 footer {
 	padding-bottom: 100px;
@@ -109,11 +123,12 @@ footer {
 	}
 }
 
+//DEV
+
 .development {
 	position: fixed;
 	top: 5px;
 	z-index: 9999;
-	// margin-left:-50%;
-	// margin-right:-50%;
 	color: red;
 } 
+

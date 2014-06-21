@@ -253,6 +253,62 @@
   opacity: 0.75;
 }
 
+/* Responsive Indicator
+==================================================
+Raystation
+http://rayuen.com */
+/* line 6, ../scss/_responsive-indicator.scss */
+.responsive-indicator {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999;
+  opacity: 0.9;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+/* Larger than 960px (devices and browsers) */
+@media only screen and (min-width: 960px) {
+  /* line 22, ../scss/_responsive-indicator.scss */
+  .responsive-indicator {
+    background-color: red;
+  }
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  /* line 27, ../scss/_responsive-indicator.scss */
+  .responsive-indicator {
+    background-color: black;
+  }
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 32, ../scss/_responsive-indicator.scss */
+  .responsive-indicator {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 37, ../scss/_responsive-indicator.scss */
+  .responsive-indicator {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 42, ../scss/_responsive-indicator.scss */
+  .responsive-indicator {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 /* line 324, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.2.3/";
@@ -8239,60 +8295,66 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 15, ../scss/style.scss */
+  /* line 18, ../scss/style.scss */
   .mobile {
     display: none;
   }
 
-  /* line 15, ../scss/style.scss */
+  /* line 18, ../scss/style.scss */
   .desktop {
     display: inherit;
   }
 }
 @media only screen and (max-width: 959px) {
-  /* line 16, ../scss/style.scss */
+  /* line 19, ../scss/style.scss */
   .mobile {
     display: none;
   }
 
-  /* line 16, ../scss/style.scss */
+  /* line 19, ../scss/style.scss */
   .desktop {
     display: inherit;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 17, ../scss/style.scss */
+  /* line 20, ../scss/style.scss */
   .mobile {
     display: inherit;
   }
 
-  /* line 17, ../scss/style.scss */
+  /* line 20, ../scss/style.scss */
   .desktop {
     display: none;
   }
 }
-/* line 34, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 .scale-with-grid {
   width: 100%;
   height: auto;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 38, ../scss/style.scss */
 .add-bottom {
   margin-bottom: 1.875rem;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 body {
   background-color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13pt;
+}
+/* line 46, ../scss/style.scss */
+body p {
+  font-size: 13pt;
 }
 
-/* line 43, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .posts hr:first-child {
   margin-top: 0;
 }
 
-/* line 47, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 hr {
   border: 0;
   height: 15px;
@@ -8300,72 +8362,73 @@ hr {
   margin: 1em 0;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 nav {
   padding-top: 2.5rem;
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 59, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   nav {
     text-align: center;
   }
 }
-/* line 66, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 nav ul li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 69, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 76, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .description {
   padding: 1rem 0;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 #sidebar {
+  font-family: sans-serif;
   background-color: silver;
   padding: 1em;
 }
-/* line 83, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 #sidebar h2 {
   font-size: 1rem;
 }
-/* line 86, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 #sidebar ul {
   padding: 0;
   margin: 0;
   margin-bottom: 1rem;
 }
-/* line 89, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 #sidebar ul li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 96, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 footer {
   padding-bottom: 100px;
 }
-/* line 98, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 footer table {
   border: 0;
   padding: 0;
   margin: 0;
   border-spacing: 0;
 }
-/* line 103, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 footer table td {
   background-color: rgba(255, 255, 255, 0);
   padding: 0;
@@ -8373,7 +8436,7 @@ footer table td {
   padding-right: 1em;
 }
 
-/* line 112, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 .development {
   position: fixed;
   top: 5px;
