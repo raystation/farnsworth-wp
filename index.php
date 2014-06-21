@@ -1,8 +1,8 @@
 <?php get_header() ;?>
+<div class="development">index.php</div>
   
 <section class="row posts">
   <div class="small-12 medium-8 columns">
-      <div class="development">index.php</div>
       <?php 
 
         if (have_posts()) :

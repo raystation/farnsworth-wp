@@ -17,6 +17,9 @@
 
 		<div class="small-12 medium-3 columns end">
 			<a href="http://www.1stdibs.com/dealers/farnsworth/" target='_blank'>Farnsworth on 1stdibs</a> <br>
+			Twitter <br>
+			Facebook <br>
+			Instagram
 		</div>
 		
 	</footer>
