@@ -8,17 +8,16 @@
     <script src="<?php echo get_bloginfo('template_url') ?>/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="responsive-indicator"></div>
-    <header class="row">
 
+    <div class="responsive-indicator"></div>
+
+    <header class="row">
       <div class="small-12 medium-6 columns">
-        <a href="<?php echo get_bloginfo('wpurl') ;?>"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo.jpg" alt="" class="scale-with-grid"></a>
+        <a href="<?php echo get_bloginfo('wpurl') ;?>"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/logo/white-logotype.svg" alt="" class="scale-with-grid"></a>
       </div>
 
       <nav class="small-12 medium-6 columns">
-
         <?php 
-
           //MAIN MENU
           wp_nav_menu(
             array(
@@ -30,9 +29,8 @@
         ?>
       </nav>
 
-    </header> 
-    <section class="row description">
       <div class="small-12 columns">
         <?php bloginfo( "description" ); ?> 
       </div>
-    </section>
+
+    </header> 

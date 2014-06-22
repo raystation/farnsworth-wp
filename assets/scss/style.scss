@@ -3,9 +3,10 @@
 @import "app";
 
 // SETTINGS
-$font: "Times New Roman", Times, serif;
-$font-size: 13pt;
 $bgcolor: whitesmoke;
+$font-color: lighten(black,20%);
+$font: "Times New Roman", Times, serif;
+$font-size: 14pt;
 
 // MEDIA QUERIES
 $desktop-large: "only screen and (min-width: 960px)";
@@ -40,8 +41,10 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 
 // GENERAL
 body {
+	margin-top: 30px;
 	background-color: $bgcolor;
 	font-family: $font;
+	color: $font-color;
 	font-size: $font-size;
 	p {
 		font-size: $font-size;
@@ -62,12 +65,11 @@ hr {
 //HEADER
 
 header {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 1rem;
 }
 
 nav {
-	padding-top: 2.5rem;
+	// padding-top: 2.5rem;
 	text-align: right;
 	@media #{$mobile} {
 		text-align: center;
@@ -89,7 +91,7 @@ nav {
 
 #sidebar {
 	font-family: sans-serif;
-	background-color: silver;
+	background-color: darken( $bgcolor, 5%);
 	padding:1em;
 	h2 {
 		font-size: 1rem;
