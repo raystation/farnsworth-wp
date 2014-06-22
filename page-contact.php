@@ -1,8 +1,9 @@
 <?php get_header() ;?>
-<div class="development">page.php</div>  
+<div class="development">page-contact.php</div>  
 
 <div class="row">
-  <div class="small-12 columns">
+  <div class="small-12 medium-8 columns posts">
+    <hr>
     <?php 
       if (have_posts()) :
       while (have_posts()) :

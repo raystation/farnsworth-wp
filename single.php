@@ -2,6 +2,7 @@
 //single post page
 get_header() ;?>
 <div class="development">single.php</div>
+
 <section class="row posts">
   <div class="small-12 medium-8 columns">
       <?php 

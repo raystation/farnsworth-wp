@@ -5,6 +5,7 @@ Template Name: Page Of Posts
 get_header();
 ?>
 <div class="development">pageofposts.php</div>  
+
 <section class="row posts">
   <div class="small-12 medium-8 columns">
 
