@@ -40,6 +40,7 @@
 			  // dots: true
 			});
 		});		
-	</script>    
+	</script>
+	<?php get_dev(false,true);?>
   </body>
 </html>

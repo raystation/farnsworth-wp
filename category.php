@@ -1,5 +1,5 @@
 <?php get_header() ;?>
-<div class="development">category.php</div>  
+<div class="development">category.php</div>
 
 <div class="row">
   <div class="small-12 columns">
@@ -29,7 +29,7 @@
 
             if ($count==6) { ?>
           </div>
-          <div class="row add-bottom">
+          <div class="row add-bottom <?php if ( $count < 6 ) { echo "end"; }; ?>">
 
         <?php }
 

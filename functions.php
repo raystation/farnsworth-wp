@@ -97,4 +97,10 @@ function firstImage() {
   return $first_img;
 }
 
+function get_dev( $responsive=true, $reload=true) {
+	if ( $responsive ) { echo "<div class=\"responsive-indicator\"></div>"; 	}
+	if ( $reload ) { echo "<script>document.write('<script src=\"http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1\"></' + 'script>')</script>"; }
 
+}
+
+?>
