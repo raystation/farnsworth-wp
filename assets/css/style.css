@@ -8295,50 +8295,66 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 19, ../scss/style.scss */
+  /* line 20, ../scss/style.scss */
   .mobile {
     display: none;
   }
 
-  /* line 19, ../scss/style.scss */
+  /* line 20, ../scss/style.scss */
   .desktop {
     display: inherit;
   }
 }
 @media only screen and (max-width: 959px) {
-  /* line 20, ../scss/style.scss */
+  /* line 21, ../scss/style.scss */
   .mobile {
     display: none;
   }
 
-  /* line 20, ../scss/style.scss */
+  /* line 21, ../scss/style.scss */
   .desktop {
     display: inherit;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 21, ../scss/style.scss */
+  /* line 22, ../scss/style.scss */
   .mobile {
     display: inherit;
   }
 
-  /* line 21, ../scss/style.scss */
+  /* line 22, ../scss/style.scss */
   .desktop {
     display: none;
   }
 }
 /* line 38, ../scss/style.scss */
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 47, ../scss/style.scss */
 .scale-with-grid {
   width: 100%;
   height: auto;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 48, ../scss/style.scss */
 .add-bottom {
   margin-bottom: 1.875rem;
 }
 
-/* line 43, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 57, ../scss/style.scss */
 body {
   margin-top: 30px;
   background-color: whitesmoke;
@@ -8346,17 +8362,17 @@ body {
   color: #333333;
   font-size: 14pt;
 }
-/* line 49, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 body p {
   font-size: 14pt;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .posts hr:first-child {
   margin-top: 0;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 hr {
   border: 0;
   height: 15px;
@@ -8364,71 +8380,72 @@ hr {
   margin: 1em 0;
 }
 
-/* line 67, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 header {
   padding-bottom: 1rem;
 }
 
-/* line 71, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 nav {
+  padding: 1em;
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 71, ../scss/style.scss */
+  /* line 85, ../scss/style.scss */
   nav {
     text-align: center;
   }
 }
-/* line 78, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 nav ul li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 81, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* line 88, ../scss/style.scss */
+/* line 102, ../scss/style.scss */
 .description {
   padding: 1rem 0;
 }
 
-/* line 92, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 #sidebar {
   font-family: sans-serif;
   background-color: #e8e8e8;
   padding: 1em;
 }
-/* line 96, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 #sidebar h2 {
   font-size: 1rem;
 }
-/* line 99, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 #sidebar ul {
   padding: 0;
   margin: 0;
   margin-bottom: 1rem;
 }
-/* line 103, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 #sidebar ul li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 112, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 footer {
   padding-bottom: 100px;
 }
-/* line 114, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 footer table {
   border: 0;
   padding: 0;
   margin: 0;
   border-spacing: 0;
 }
-/* line 119, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 footer table td {
   background-color: rgba(255, 255, 255, 0);
   padding: 0;
@@ -8436,10 +8453,62 @@ footer table td {
   padding-right: 1em;
 }
 
-/* line 130, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .development {
   position: fixed;
   top: 5px;
   z-index: 9999;
   color: red;
+}
+
+/* line 149, ../scss/style.scss */
+#menu {
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+}
+/* line 151, ../scss/style.scss */
+#menu ul, #menu li, #menu a {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 156, ../scss/style.scss */
+ul#menu, ul#menu ul.sub-menu {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 159, ../scss/style.scss */
+ul#menu li, ul#menu ul.sub-menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*Link Appearance*/
+/* line 164, ../scss/style.scss */
+ul#menu li a, ul#menu li ul.sub-menu li a {
+  text-decoration: none;
+  color: #fff;
+  background: #666;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+/*Make the parent of sub-menu relative*/
+/* line 172, ../scss/style.scss */
+ul#menu li {
+  position: relative;
+}
+
+/*sub menu*/
+/* line 176, ../scss/style.scss */
+ul#menu li ul.sub-menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+/* line 183, ../scss/style.scss */
+ul#menu li:hover ul.sub-menu {
+  display: block;
 }

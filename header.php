@@ -20,7 +20,9 @@
 				array(
 					"main-menu" => "Main Menu",
 					"container" => "ul",
-					"menu_class" => "dropdown"
+					"menu_class" => "vertical-align",
+					"menu_id" => "menu",
+
 				)
 			);
         ?>

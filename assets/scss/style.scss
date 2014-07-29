@@ -1,6 +1,7 @@
 @import "slick";
 @import "responsive-indicator";
 @import "app";
+@import "compass/css3";
 
 // SETTINGS
 $bgcolor: whitesmoke;
@@ -34,10 +35,23 @@ $mobile-portrait: "only screen and (max-width: 479px)";
 	transform: translateY(-50%);
 }
 
+.vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 // OPTIONS
 .scale-with-grid { width: 100%; height: auto; }
 .add-bottom { margin-bottom: $column-gutter; }
+	// @include transition( all 0.25s ease-in-out );
 
+
+* {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
 
 // GENERAL
 body {
@@ -69,7 +83,7 @@ header {
 }
 
 nav {
-	// padding-top: 2.5rem;
+	padding: 1em;
 	text-align: right;
 	@media #{$mobile} {
 		text-align: center;
@@ -113,13 +127,11 @@ footer {
 	padding-bottom: 100px;
 	table {
 		border: 0;
-		padding: 0;
-		margin: 0;
+		@include space-reset;
 		border-spacing:0;
 		td {
 			background-color: rgba(white,0);
-			padding: 0;
-			margin: 0;
+			@include space-reset;
 			padding-right: 1em;
 		}
 	}
@@ -134,3 +146,40 @@ footer {
 	color: red;
 } 
 
+#menu {
+	font-family: Gotham, Helvetica, Arial, sans-serif;
+	ul, li, a {
+	    @include space-reset;
+	}
+}
+
+ul#menu, ul#menu ul.sub-menu {
+    @include space-reset;
+}
+ul#menu li, ul#menu ul.sub-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+/*Link Appearance*/
+ul#menu li a, ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: #fff;
+    background: #666;
+    padding: 2px 5px;
+    display:inline-block;
+}
+/*Make the parent of sub-menu relative*/
+ul#menu li {
+    position: relative;
+}
+/*sub menu*/
+ul#menu li ul.sub-menu {
+    display:none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    // width: 100px;
+}
+ul#menu li:hover ul.sub-menu {
+    display:block;
+}
