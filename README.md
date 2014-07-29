@@ -1,3 +1,26 @@
+
+#TO-DO
+
+- figure out how to format a page of images (ie. category:inventory, tagged:available, tagged: sold )
+
+x slideshow on front page
+	- template for a slideshow template
+	- slideshow plugin?
+
+- find code for images in a post
+- home page: automatic 4 entries from most recent inventory that is also available
+- home page: recently sold
+- ecommerce plugin
+
+#DONE
+x style the dropdown menus
+x logo in svg format
+x figure out how to format journal entries
+
+
+
+
+
 # Foundation Compass Template
 
 The easiest way to get started with Foundation + Compass.
